@@ -1,0 +1,478 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xF9889C9CBFC739E0",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../project.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2025.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "cg_fpga_0": "",
+      "adpt_out_0": "",
+      "m74LS86_0": "",
+      "adpt_in_0": ""
+    },
+    "interface_ports": {
+      "FIXED_IO_0": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:display_processing_system7:fixedio:1.0",
+        "vlnv": "xilinx.com:display_processing_system7:fixedio_rtl:1.0",
+        "parameters": {
+          "CAN_DEBUG": {
+            "value": "false",
+            "value_src": "default"
+          }
+        },
+        "hdl_attributes": {
+          "LOCKED": {
+            "value": "FALSE",
+            "value_src": "default"
+          }
+        },
+        "port_maps": {
+          "MIO": {
+            "physical_name": "FIXED_IO_0_mio",
+            "direction": "IO",
+            "left": "53",
+            "right": "0"
+          },
+          "DDR_VRN": {
+            "physical_name": "FIXED_IO_0_ddr_vrn",
+            "direction": "IO"
+          },
+          "DDR_VRP": {
+            "physical_name": "FIXED_IO_0_ddr_vrp",
+            "direction": "IO"
+          },
+          "PS_SRSTB": {
+            "physical_name": "FIXED_IO_0_ps_srstb",
+            "direction": "IO"
+          },
+          "PS_CLK": {
+            "physical_name": "FIXED_IO_0_ps_clk",
+            "direction": "IO"
+          },
+          "PS_PORB": {
+            "physical_name": "FIXED_IO_0_ps_porb",
+            "direction": "IO"
+          }
+        }
+      },
+      "DDR_0": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:ddrx:1.0",
+        "vlnv": "xilinx.com:interface:ddrx_rtl:1.0",
+        "parameters": {
+          "AXI_ARBITRATION_SCHEME": {
+            "value": "TDM",
+            "value_src": "const_prop"
+          },
+          "BURST_LENGTH": {
+            "value": "8",
+            "value_src": "const_prop"
+          },
+          "CAN_DEBUG": {
+            "value": "false",
+            "value_src": "default"
+          },
+          "CAS_LATENCY": {
+            "value": "11",
+            "value_src": "const_prop"
+          },
+          "CAS_WRITE_LATENCY": {
+            "value": "11",
+            "value_src": "const_prop"
+          },
+          "CS_ENABLED": {
+            "value": "true",
+            "value_src": "const_prop"
+          },
+          "DATA_MASK_ENABLED": {
+            "value": "true",
+            "value_src": "const_prop"
+          },
+          "DATA_WIDTH": {
+            "value": "8",
+            "value_src": "const_prop"
+          },
+          "MEMORY_TYPE": {
+            "value": "COMPONENTS",
+            "value_src": "const_prop"
+          },
+          "MEM_ADDR_MAP": {
+            "value": "ROW_COLUMN_BANK",
+            "value_src": "const_prop"
+          },
+          "SLOT": {
+            "value": "Single",
+            "value_src": "const_prop"
+          },
+          "TIMEPERIOD_PS": {
+            "value": "1250",
+            "value_src": "const_prop"
+          }
+        },
+        "hdl_attributes": {
+          "LOCKED": {
+            "value": "FALSE",
+            "value_src": "default"
+          }
+        },
+        "port_maps": {
+          "CAS_N": {
+            "physical_name": "DDR_0_cas_n",
+            "direction": "IO"
+          },
+          "CKE": {
+            "physical_name": "DDR_0_cke",
+            "direction": "IO"
+          },
+          "CK_N": {
+            "physical_name": "DDR_0_ck_n",
+            "direction": "IO"
+          },
+          "CK_P": {
+            "physical_name": "DDR_0_ck_p",
+            "direction": "IO"
+          },
+          "CS_N": {
+            "physical_name": "DDR_0_cs_n",
+            "direction": "IO"
+          },
+          "RESET_N": {
+            "physical_name": "DDR_0_reset_n",
+            "direction": "IO"
+          },
+          "ODT": {
+            "physical_name": "DDR_0_odt",
+            "direction": "IO"
+          },
+          "RAS_N": {
+            "physical_name": "DDR_0_ras_n",
+            "direction": "IO"
+          },
+          "WE_N": {
+            "physical_name": "DDR_0_we_n",
+            "direction": "IO"
+          },
+          "BA": {
+            "physical_name": "DDR_0_ba",
+            "direction": "IO",
+            "left": "2",
+            "right": "0"
+          },
+          "ADDR": {
+            "physical_name": "DDR_0_addr",
+            "direction": "IO",
+            "left": "14",
+            "right": "0"
+          },
+          "DM": {
+            "physical_name": "DDR_0_dm",
+            "direction": "IO",
+            "left": "3",
+            "right": "0"
+          },
+          "DQ": {
+            "physical_name": "DDR_0_dq",
+            "direction": "IO",
+            "left": "31",
+            "right": "0"
+          },
+          "DQS_N": {
+            "physical_name": "DDR_0_dqs_n",
+            "direction": "IO",
+            "left": "3",
+            "right": "0"
+          },
+          "DQS_P": {
+            "physical_name": "DDR_0_dqs_p",
+            "direction": "IO",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "components": {
+      "cg_fpga_0": {
+        "vlnv": "educg.net:user:cg_fpga:1.4",
+        "ip_revision": "5",
+        "xci_name": "design_1_cg_fpga_0_0",
+        "xci_path": "ip\\design_1_cg_fpga_0_0\\design_1_cg_fpga_0_0.xci",
+        "inst_hier_path": "cg_fpga_0",
+        "has_run_ip_tcl": "true"
+      },
+      "adpt_out_0": {
+        "vlnv": "xilinx.com:module_ref:adpt_out:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_adpt_out_0_1",
+        "xci_path": "ip\\design_1_adpt_out_0_1\\design_1_adpt_out_0_1.xci",
+        "inst_hier_path": "adpt_out_0",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "adpt_out",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "Y15": {
+            "direction": "I"
+          },
+          "Y14": {
+            "direction": "I"
+          },
+          "Y13": {
+            "direction": "I"
+          },
+          "Y12": {
+            "direction": "I"
+          },
+          "Y11": {
+            "direction": "I"
+          },
+          "Y10": {
+            "direction": "I"
+          },
+          "Y9": {
+            "direction": "I"
+          },
+          "Y8": {
+            "direction": "I"
+          },
+          "Y7": {
+            "direction": "I"
+          },
+          "Y6": {
+            "direction": "I"
+          },
+          "Y5": {
+            "direction": "I"
+          },
+          "Y4": {
+            "direction": "I"
+          },
+          "Y3": {
+            "direction": "I"
+          },
+          "Y2": {
+            "direction": "I"
+          },
+          "Y1": {
+            "direction": "I"
+          },
+          "Y0": {
+            "direction": "I"
+          },
+          "led": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "m74LS86_0": {
+        "vlnv": "xilinx.com:module_ref:m74LS86:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_m74LS86_0_1",
+        "xci_path": "ip\\design_1_m74LS86_0_1\\design_1_m74LS86_0_1.xci",
+        "inst_hier_path": "m74LS86_0",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "m74LS86",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A1": {
+            "direction": "I"
+          },
+          "B1": {
+            "direction": "I"
+          },
+          "A2": {
+            "direction": "I"
+          },
+          "B2": {
+            "direction": "I"
+          },
+          "A3": {
+            "direction": "I"
+          },
+          "B3": {
+            "direction": "I"
+          },
+          "A4": {
+            "direction": "I"
+          },
+          "B4": {
+            "direction": "I"
+          },
+          "Y1": {
+            "direction": "O"
+          },
+          "Y2": {
+            "direction": "O"
+          },
+          "Y3": {
+            "direction": "O"
+          },
+          "Y4": {
+            "direction": "O"
+          }
+        }
+      },
+      "adpt_in_0": {
+        "vlnv": "xilinx.com:module_ref:adpt_in:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_adpt_in_0_2",
+        "xci_path": "ip\\design_1_adpt_in_0_2\\design_1_adpt_in_0_2.xci",
+        "inst_hier_path": "adpt_in_0",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "adpt_in",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "sw_a": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "btn_clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "btn_rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "btn_rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "I15": {
+            "direction": "O"
+          },
+          "I14": {
+            "direction": "O"
+          },
+          "I13": {
+            "direction": "O"
+          },
+          "I12": {
+            "direction": "O"
+          },
+          "I11": {
+            "direction": "O"
+          },
+          "I10": {
+            "direction": "O"
+          },
+          "I9": {
+            "direction": "O"
+          },
+          "I8": {
+            "direction": "O"
+          },
+          "I7": {
+            "direction": "O"
+          },
+          "I6": {
+            "direction": "O"
+          },
+          "I5": {
+            "direction": "O"
+          },
+          "I4": {
+            "direction": "O"
+          },
+          "I3": {
+            "direction": "O"
+          },
+          "I2": {
+            "direction": "O"
+          },
+          "I1": {
+            "direction": "O"
+          },
+          "I0": {
+            "direction": "O"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "O"
+          },
+          "clr": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "interface_nets": {
+      "cg_fpga_0_DDR": {
+        "interface_ports": [
+          "DDR_0",
+          "cg_fpga_0/DDR"
+        ]
+      },
+      "cg_fpga_0_FIXED_IO": {
+        "interface_ports": [
+          "FIXED_IO_0",
+          "cg_fpga_0/FIXED_IO"
+        ]
+      }
+    },
+    "nets": {
+      "adpt_in_0_I0": {
+        "ports": [
+          "adpt_in_0/I0",
+          "m74LS86_0/B1"
+        ]
+      },
+      "adpt_in_0_I1": {
+        "ports": [
+          "adpt_in_0/I1",
+          "m74LS86_0/A1"
+        ]
+      },
+      "adpt_out_0_led": {
+        "ports": [
+          "adpt_out_0/led",
+          "cg_fpga_0/gpio_led"
+        ]
+      },
+      "cg_fpga_0_btn_clk": {
+        "ports": [
+          "cg_fpga_0/btn_clk",
+          "adpt_in_0/btn_clk"
+        ]
+      },
+      "cg_fpga_0_btn_rst": {
+        "ports": [
+          "cg_fpga_0/btn_rst",
+          "adpt_in_0/btn_rst"
+        ]
+      },
+      "cg_fpga_0_gpio_sw_1": {
+        "ports": [
+          "cg_fpga_0/gpio_sw_1",
+          "adpt_in_0/sw_a"
+        ]
+      },
+      "m74LS86_0_Y1": {
+        "ports": [
+          "m74LS86_0/Y1",
+          "adpt_out_0/Y0"
+        ]
+      }
+    }
+  }
+}
