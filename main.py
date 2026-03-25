@@ -1,57 +1,46 @@
-from pathlib import Path
+import os
 import shutil
 
 
-def _unique_target_path(target: Path) -> Path:
-    """Return a non-conflicting path by appending an index if needed."""
-    if not target.exists():
-        return target
-
-    stem = target.stem
-    suffix = target.suffix
-    parent = target.parent
-    index = 1
-    while True:
-        candidate = parent / f"{stem}_{index}{suffix}"
-        if not candidate.exists():
-            return candidate
-        index += 1
+def find_bit_files(root):
+    """递归查找root目录下所有.bit文件，返回文件的绝对路径列表"""
+    bit_files = []
+    for dirpath, _, filenames in os.walk(root):
+        for fname in filenames:
+            if fname.lower().endswith(".bit"):
+                bit_files.append(os.path.join(dirpath, fname))
+    return bit_files
 
 
-def copy_bitstreams(experiment_dir: Path, bitstream_dir: Path) -> int:
-    """
-    Copy all .bit files under experiment_dir recursively into bitstream_dir,
-    grouped by the first-level directory under experiment_dir.
-    """
-    copied_count = 0
-
-    for bit_file in experiment_dir.rglob("*.bit"):
-        relative = bit_file.relative_to(experiment_dir)
-        parts = relative.parts
-        first_level = parts[0] if parts else "root"
-
-        target_dir = bitstream_dir / first_level
-        target_dir.mkdir(parents=True, exist_ok=True)
-
-        target_path = _unique_target_path(target_dir / bit_file.name)
-        shutil.copy2(bit_file, target_path)
-        copied_count += 1
-
-    return copied_count
+def get_first_level_subdir(path, base):
+    """获取path相对于base的第一级子目录名"""
+    rel = os.path.relpath(path, base)
+    parts = rel.split(os.sep)
+    return parts[0] if len(parts) > 1 else None
 
 
-def main() -> None:
-    base_dir = Path(__file__).resolve().parent
-    experiment_dir = base_dir / "experiment"
-    bitstream_dir = base_dir / "bitstream"
+def main():
+    exp_dir = "experiment"
+    bitstream_dir = "bitstream"
+    copied = []
 
-    if not experiment_dir.exists() or not experiment_dir.is_dir():
-        print(f"Source directory not found: {experiment_dir}")
-        return
+    bit_files = find_bit_files(exp_dir)
+    for src in bit_files:
+        # 获取第一级子目录
+        subdir = get_first_level_subdir(src, exp_dir)
+        if not subdir:
+            continue  # 跳过没有一级子目录的情况
+        dst_dir = os.path.join(bitstream_dir, subdir)
+        os.makedirs(dst_dir, exist_ok=True)
+        dst = os.path.join(dst_dir, os.path.basename(src))
+        if os.path.exists(dst):
+            continue  # 已存在则跳过
+        shutil.copy2(src, dst)
+        copied.append(f"{src} -> {dst}")
 
-    bitstream_dir.mkdir(parents=True, exist_ok=True)
-    copied = copy_bitstreams(experiment_dir, bitstream_dir)
-    print(f"Copied {copied} .bit file(s) to: {bitstream_dir}")
+    print("复制完成，以下文件被复制：")
+    for line in copied:
+        print(line)
 
 
 if __name__ == "__main__":
