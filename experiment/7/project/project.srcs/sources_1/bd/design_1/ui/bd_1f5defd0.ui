@@ -1,0 +1,81 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.623203",
+   "Default View_TopLeft":"10,-377",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port FIXED_IO_0 -pg 1 -lvl 14 -x 2880 -y 210 -defaultsOSRD
+preplace port DDR_0 -pg 1 -lvl 14 -x 2880 -y 230 -defaultsOSRD
+preplace inst cg_fpga_0 -pg 1 -lvl 13 -x 2720 -y 290 -defaultsOSRD
+preplace inst adpt_out_0 -pg 1 -lvl 12 -x 2470 -y 180 -defaultsOSRD
+preplace inst adpt_in_0 -pg 1 -lvl 1 -x 120 -y 360 -defaultsOSRD
+preplace inst xor2_0 -pg 1 -lvl 2 -x 430 -y 440 -defaultsOSRD
+preplace inst xor2_1 -pg 1 -lvl 3 -x 620 -y 430 -defaultsOSRD
+preplace inst xor2_2 -pg 1 -lvl 4 -x 820 -y 420 -defaultsOSRD
+preplace inst xor2_3 -pg 1 -lvl 5 -x 1010 -y 470 -defaultsOSRD
+preplace inst xor2_4 -pg 1 -lvl 6 -x 1230 -y 530 -defaultsOSRD
+preplace inst xor2_5 -pg 1 -lvl 7 -x 1450 -y 520 -defaultsOSRD
+preplace inst xor2_6 -pg 1 -lvl 8 -x 1670 -y 460 -defaultsOSRD
+preplace inst xor2_7 -pg 1 -lvl 9 -x 1860 -y 520 -defaultsOSRD
+preplace inst FA_0 -pg 1 -lvl 3 -x 620 -y 140 -defaultsOSRD
+preplace inst FA_1 -pg 1 -lvl 4 -x 820 -y 120 -defaultsOSRD
+preplace inst FA_2 -pg 1 -lvl 5 -x 1010 -y 120 -defaultsOSRD
+preplace inst FA_3 -pg 1 -lvl 6 -x 1230 -y 110 -defaultsOSRD
+preplace inst FA_4 -pg 1 -lvl 7 -x 1450 -y 100 -defaultsOSRD
+preplace inst FA_5 -pg 1 -lvl 8 -x 1670 -y 310 -defaultsOSRD
+preplace inst FA_6 -pg 1 -lvl 9 -x 1860 -y 310 -defaultsOSRD
+preplace inst FA_7 -pg 1 -lvl 10 -x 2070 -y 90 -defaultsOSRD
+preplace inst xor2_8 -pg 1 -lvl 11 -x 2240 -y 100 -defaultsOSRD
+preplace netloc adpt_out_0_led 1 12 1 N 180
+preplace netloc cg_fpga_0_gpio_sw_2 1 0 14 20 610 NJ 610 NJ 610 NJ 610 NJ 610 NJ 610 NJ 610 NJ 610 NJ 610 NJ 610 NJ 610 NJ 610 NJ 610 2860
+preplace netloc adpt_in_0_B0 1 1 1 360 430n
+preplace netloc adpt_in_0_K 1 1 8 290 360 520 360 720 490 910 540 1130 460 1350 590 1580 530 NJ
+preplace netloc adpt_in_0_B1 1 1 2 300J 510 530
+preplace netloc adpt_in_0_B2 1 1 3 280J 330 NJ 330 730
+preplace netloc adpt_in_0_B3 1 1 4 340J 340 NJ 340 NJ 340 910
+preplace netloc adpt_in_0_B4 1 1 5 360J 370 500J 550 NJ 550 NJ 550 1140
+preplace netloc adpt_in_0_B5 1 1 6 320J 320 NJ 320 NJ 320 NJ 320 NJ 320 1360
+preplace netloc adpt_in_0_B6 1 1 7 330J 350 NJ 350 NJ 350 NJ 350 NJ 350 NJ 350 1540
+preplace netloc adpt_in_0_B7 1 1 8 310J 600 NJ 600 NJ 600 NJ 600 NJ 600 NJ 600 NJ 600 1770
+preplace netloc adpt_in_0_A0 1 1 2 270J 190 500
+preplace netloc xor2_0_y 1 2 1 510 140n
+preplace netloc adpt_in_0_C0 1 1 2 350J 200 520
+preplace netloc adpt_in_0_A1 1 1 3 260J 60 NJ 60 710
+preplace netloc xor2_1_y 1 3 1 710 120n
+preplace netloc FA_0_Cout 1 3 1 720 140n
+preplace netloc adpt_in_0_A2 1 1 4 240J 40 NJ 40 NJ 40 920
+preplace netloc xor2_2_y 1 4 1 920 120n
+preplace netloc FA_1_Cout 1 4 1 910 130n
+preplace netloc adpt_in_0_A3 1 1 5 220J 30 NJ 30 NJ 30 NJ 30 1100
+preplace netloc xor2_3_y 1 5 1 1110 110n
+preplace netloc FA_2_Cout 1 5 1 N 130
+preplace netloc adpt_in_0_A4 1 1 6 NJ 250 NJ 250 NJ 250 NJ 250 NJ 250 1320
+preplace netloc xor2_4_y 1 6 1 1340 100n
+preplace netloc FA_3_Cout 1 6 1 N 120
+preplace netloc adpt_in_0_A5 1 1 7 NJ 230 NJ 230 NJ 230 NJ 230 NJ 230 NJ 230 1540
+preplace netloc xor2_5_y 1 7 1 1570 310n
+preplace netloc FA_4_Cout 1 7 1 1560 110n
+preplace netloc adpt_in_0_A6 1 1 8 230J 220 500J 240 NJ 240 NJ 240 NJ 240 NJ 240 1550J 230 1760
+preplace netloc xor2_6_y 1 8 1 1770 310n
+preplace netloc FA_5_Cout 1 8 1 1760 320n
+preplace netloc adpt_in_0_A7 1 1 9 250J 210 520J 220 NJ 220 NJ 220 NJ 220 NJ 220 1540J 160 NJ 160 1960
+preplace netloc xor2_7_y 1 9 1 1980 90n
+preplace netloc FA_6_Cout 1 9 2 1950 10 2170
+preplace netloc FA_7_Cout 1 10 1 2160 100n
+preplace netloc FA_7_Sum 1 10 2 2160J 30 2360
+preplace netloc FA_6_Sum 1 9 3 NJ 300 NJ 300 2340
+preplace netloc xor2_8_y 1 11 1 2330 100n
+preplace netloc FA_5_Sum 1 8 4 1770J 230 NJ 230 NJ 230 2350
+preplace netloc FA_4_Sum 1 7 5 1570 170 NJ 170 NJ 170 NJ 170 2360J
+preplace netloc FA_3_Sum 1 6 6 1330 180 NJ 180 NJ 180 NJ 180 NJ 180 NJ
+preplace netloc FA_2_Sum 1 5 7 1100 190 NJ 190 NJ 190 NJ 190 NJ 190 NJ 190 2360J
+preplace netloc FA_1_Sum 1 4 8 910 20 NJ 20 NJ 20 NJ 20 NJ 20 1970J 210 NJ 210 2310J
+preplace netloc FA_0_Sum 1 3 9 730J 200 NJ 200 NJ 200 NJ 200 NJ 200 NJ 200 NJ 200 NJ 200 2320
+preplace netloc cg_fpga_0_FIXED_IO 1 13 1 NJ 210
+preplace netloc cg_fpga_0_DDR 1 13 1 NJ 230
+levelinfo -pg 1 0 120 430 620 820 1010 1230 1450 1670 1860 2070 2240 2470 2720 2880
+pagesize -pg 1 -db -bbox -sgen 0 0 3010 620
+"
+}
+
