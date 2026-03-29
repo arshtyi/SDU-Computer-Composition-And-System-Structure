@@ -1,46 +1,62 @@
-import os
+from __future__ import annotations
+
 import shutil
+from pathlib import Path
 
 
-def find_bit_files(root):
-    """递归查找root目录下所有.bit文件，返回文件的绝对路径列表"""
-    bit_files = []
-    for dirpath, _, filenames in os.walk(root):
-        for fname in filenames:
-            if fname.lower().endswith(".bit"):
-                bit_files.append(os.path.join(dirpath, fname))
-    return bit_files
+def main() -> None:
+    """
+    Copy every .bit file under experiment/ into bitstream/, keeping only
+    the numeric directory segments from the original path.
 
+    If the destination file already exists, it is skipped. A summary of
+    copied (and skipped) files is printed at the end.
+    """
 
-def get_first_level_subdir(path, base):
-    """获取path相对于base的第一级子目录名"""
-    rel = os.path.relpath(path, base)
-    parts = rel.split(os.sep)
-    return parts[0] if len(parts) > 1 else None
+    experiment_root = Path("experiment")
+    bitstream_root = Path("bitstream")
 
+    copied: list[Path] = []
+    skipped: list[Path] = []
 
-def main():
-    exp_dir = "experiment"
-    bitstream_dir = "bitstream"
-    copied = []
+    if not experiment_root.exists():
+        print("experiment/ not found, nothing to do.")
+        return
 
-    bit_files = find_bit_files(exp_dir)
-    for src in bit_files:
-        # 获取第一级子目录
-        subdir = get_first_level_subdir(src, exp_dir)
-        if not subdir:
-            continue  # 跳过没有一级子目录的情况
-        dst_dir = os.path.join(bitstream_dir, subdir)
-        os.makedirs(dst_dir, exist_ok=True)
-        dst = os.path.join(dst_dir, os.path.basename(src))
-        if os.path.exists(dst):
-            continue  # 已存在则跳过
-        shutil.copy2(src, dst)
-        copied.append(f"{src} -> {dst}")
+    for bit_file in experiment_root.rglob("*"):
+        if not bit_file.is_file() or bit_file.suffix.lower() != ".bit":
+            continue
 
-    print("复制完成，以下文件被复制：")
-    for line in copied:
-        print(line)
+        relative = bit_file.relative_to(experiment_root)
+
+        numeric_parts = [part for part in relative.parts[:-1] if part.isdigit()]
+        dest = bitstream_root.joinpath(*numeric_parts, relative.name)
+
+        if dest.exists():
+            skipped.append(dest)
+            continue
+
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(bit_file, dest)
+        copied.append(dest)
+
+    if copied:
+        print("Copied files:")
+        for path in copied:
+            try:
+                print(f"- {path.relative_to(bitstream_root)}")
+            except ValueError:
+                print(f"- {path}")
+    else:
+        print("No files were copied.")
+
+    if skipped:
+        print("\nSkipped existing files:")
+        for path in skipped:
+            try:
+                print(f"- {path.relative_to(bitstream_root)}")
+            except ValueError:
+                print(f"- {path}")
 
 
 if __name__ == "__main__":
