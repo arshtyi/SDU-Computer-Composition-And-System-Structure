@@ -1,4 +1,4 @@
-#import "@preview/ezexam:0.2.9": *
+#import "@preview/ezexam:0.3.0": *
 #import "@preview/zebraw:0.6.1": *
 #import "@preview/fancy-units:0.1.1": add-macros, fancy-units-configure, num, qty, unit
 
@@ -8,10 +8,9 @@
     resume: false,
 )
 
-#show link: it => {
-    set text(fill: blue)
-    underline(offset: 2.5pt, it)
-}
+#show link: it => text(fill: blue.darken(20%))[#underline(it)]
+
+#let question = question.with(supplement: "Q")
 
 #title[
     山东大学计算机科学与技术学院 \
@@ -19,7 +18,7 @@
 ]
 
 #notice(
-    [出于方便使用#link("https://github.com/gbchu/ezexam", "gbchu/ezexam:0.2.9")作模板.],
+    [出于方便使用#link("https://github.com/gbchu/ezexam", "gbchu/ezexam:0.3.0")作模板.],
     [源码:#link("https://github.com/Arshtyi/SDU-Computer-Composition-And-System-Structure").],
     [本课程的参考书:#link("https://www.cmpedu.com/books/book/5603415.htm", "Book1"),#link("https://www.hep.com.cn/book/show/ae8b4f15-c953-4445-a56d-ed96390fe0ae", "Book2"). 并且答案均容易找到,仅记录题目.],
 )
@@ -93,7 +92,7 @@
     (_2-4.11_) 一个$8 #K times 8$位的动态RAM芯片,其内部结构排列成$256 times 256$形式,读#sym.slash 写周期为$100mus$.试问采用集中刷新、分散刷新和异步刷新三种方式的刷新间隔分别是多少?
 ]
 
-#question()[
+#question(ref-on: true)[
     (_2-4.15_) 设CPU共有$16$条地址线和$8$条数据线,并用#overline[MREQ] (低电平有效)作访存控制信号,R#sym.slash#overline[W]作读#sym.slash 写命令信号(高电平为读,低电平为写).现有这些存储芯片:ROM($2 #K times 8$位,$4 #K times 4$位,$8 #K times 8$位),RAM($16 #K times 4$位,$2 #K times 8$位,$4 #K times 8$位)及74138译码器和其他自定门电路.
 
     试从上述选用合适的芯片,画出CPU和存储芯片的连接图.要求:
@@ -103,7 +102,7 @@
 ]
 
 #question()[
-    (_2-4.16_) CPU假设同上题,现有$8$片$8 #K times 8$位的RAM芯片与CPU连接.
+    (_2-4.16_) CPU假设同@Q1-4 ,现有$8$片$8 #K times 8$位的RAM芯片与CPU连接.
     + 用74138译码器画出CPU和存储芯片的连接图.
     + 写出每片RAM芯片的地址范围.
     + 如果运行是发现不论往哪片RAM芯片写入数据,以A000H为起始地址的RAM芯片都有与其相同的数据,试分析原因.
