@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xF9889C9CBFC739E0",
+      "boundary_crc": "0xF9889C9CC3250B72",
       "device": "xc7z020clg400-1",
       "gen_directory": "../../../../project.gen/sources_1/bd/design_1",
       "name": "design_1",
@@ -362,8 +362,8 @@
       "adpt_out_0": {
         "vlnv": "xilinx.com:module_ref:adpt_out:1.0",
         "ip_revision": "1",
-        "xci_name": "design_1_adpt_out_0_0",
-        "xci_path": "ip\\design_1_adpt_out_0_0\\design_1_adpt_out_0_0.xci",
+        "xci_name": "design_1_adpt_out_0_2",
+        "xci_path": "ip\\design_1_adpt_out_0_2\\design_1_adpt_out_0_2.xci",
         "inst_hier_path": "adpt_out_0",
         "has_run_ip_tcl": "true",
         "reference_info": {

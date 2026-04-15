@@ -44,7 +44,7 @@ end
 always @(posedge clk_100M)
 begin
     if (scan_en)
-        if (scan_sel == 4'd3) 
+        if (scan_sel == 4'd3)
             scan_sel <= 4'd0;
         else
             scan_sel <= scan_sel + 1'b1;
@@ -79,7 +79,8 @@ assign LED7S    =   (A == 4'h0) ? 7'b100_0000 : // 0
                     7'h7f; // no display
 
 assign seg_cs   = scan_sel;
-assign seg_data = |scan_sel[3:1] ? 8'hff : {1'b1, LED7S};
+// assign seg_data = |scan_sel[3:1] ? 8'hff : {1'b1, LED7S};
+assign seg_data = {1'b1, LED7S};
 
 endmodule
 
@@ -171,7 +172,7 @@ module ram_dp1_256x8
     output [7:0]    q
 );
 
-ram1 ram1_i 
+ram1 ram1_i
 (
   .clka(inclock),    // input wire clka
   .wea(wren),      // input wire [0 : 0] wea
