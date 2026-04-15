@@ -1,0 +1,63 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.917774",
+   "Default View_TopLeft":"10,-51",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port FIXED_IO_0 -pg 1 -lvl 9 -x 1930 -y 330 -defaultsOSRD
+preplace port DDR_0 -pg 1 -lvl 9 -x 1930 -y 350 -defaultsOSRD
+preplace inst cg_fpga_0 -pg 1 -lvl 8 -x 1740 -y 410 -defaultsOSRD
+preplace inst adpt_in_0 -pg 1 -lvl 1 -x 170 -y 470 -defaultsOSRD
+preplace inst adpt_out_0 -pg 1 -lvl 7 -x 1470 -y 390 -defaultsOSRD
+preplace inst ram_dp1_256x8_0 -pg 1 -lvl 5 -x 970 -y 320 -defaultsOSRD
+preplace inst mux4_1_8bits_0 -pg 1 -lvl 6 -x 1230 -y 380 -defaultsOSRD
+preplace inst ram_dp1_256x8_1 -pg 1 -lvl 5 -x 970 -y 160 -defaultsOSRD
+preplace inst ram_dp1_256x8_2 -pg 1 -lvl 5 -x 970 -y 710 -defaultsOSRD
+preplace inst ram_dp1_256x8_3 -pg 1 -lvl 5 -x 970 -y 510 -defaultsOSRD
+preplace inst decoder_74139_0 -pg 1 -lvl 2 -x 400 -y 250 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 1 -x 170 -y 240 -defaultsOSRD
+preplace inst not1_0 -pg 1 -lvl 3 -x 580 -y 60 -defaultsOSRD
+preplace inst and2_0 -pg 1 -lvl 4 -x 760 -y 330 -defaultsOSRD
+preplace inst not1_1 -pg 1 -lvl 3 -x 580 -y 160 -defaultsOSRD
+preplace inst and2_1 -pg 1 -lvl 4 -x 760 -y 170 -defaultsOSRD
+preplace inst not1_2 -pg 1 -lvl 3 -x 580 -y 260 -defaultsOSRD
+preplace inst and2_2 -pg 1 -lvl 4 -x 760 -y 720 -defaultsOSRD
+preplace inst not1_3 -pg 1 -lvl 3 -x 580 -y 360 -defaultsOSRD
+preplace inst and2_3 -pg 1 -lvl 4 -x 760 -y 520 -defaultsOSRD
+preplace netloc cg_fpga_0_gpio_sw_2 1 0 9 20 620 NJ 620 NJ 620 NJ 620 NJ 620 1090J 630 NJ 630 NJ 630 1880
+preplace netloc cg_fpga_0_gpio_sw_1 1 0 9 30 610 NJ 610 NJ 610 NJ 610 NJ 610 1100J 620 NJ 620 NJ 620 1890
+preplace netloc cg_fpga_0_btn_clk 1 0 9 40 600 NJ 600 NJ 600 NJ 600 NJ 600 NJ 600 NJ 600 NJ 600 1910
+preplace netloc adpt_out_0_seg_cs 1 7 1 N 380
+preplace netloc adpt_out_0_seg_data 1 7 1 N 400
+preplace netloc adpt_in_0_addr_h 1 1 5 300 420 NJ 420 NJ 420 NJ 420 NJ
+preplace netloc cg_fpga_0_clk_100M 1 6 3 1340 610 NJ 610 1900
+preplace netloc ram_dp1_256x8_2_q 1 5 1 1110 380n
+preplace netloc ram_dp1_256x8_3_q 1 5 1 1120 400n
+preplace netloc xlconstant_0_dout 1 1 1 N 240
+preplace netloc not1_0_q 1 3 1 690 60n
+preplace netloc decoder_74139_0_Y0_n 1 2 1 500J 60n
+preplace netloc decoder_74139_0_Y1_n 1 2 1 510J 160n
+preplace netloc not1_1_q 1 3 1 N 160
+preplace netloc decoder_74139_0_Y2_n 1 2 1 NJ 260
+preplace netloc not1_2_q 1 3 1 660 260n
+preplace netloc and2_2_q 1 4 1 N 720
+preplace netloc decoder_74139_0_Y3_n 1 2 1 500J 280n
+preplace netloc not1_3_q 1 3 1 670 360n
+preplace netloc and2_3_q 1 4 1 N 520
+preplace netloc ram_dp1_256x8_0_q 1 5 1 1110 320n
+preplace netloc adpt_in_0_wren 1 1 3 NJ 490 NJ 490 680
+preplace netloc and2_0_q 1 4 1 N 330
+preplace netloc and2_1_q 1 4 1 N 170
+preplace netloc adpt_in_0_addr_7_0 1 1 4 NJ 450 NJ 450 NJ 450 840
+preplace netloc adpt_in_0_data 1 1 4 NJ 430 NJ 430 NJ 430 830
+preplace netloc adpt_in_0_clk 1 1 4 NJ 510 NJ 510 650J 590 850
+preplace netloc ram_dp1_256x8_1_q 1 5 1 1120 160n
+preplace netloc mux4_1_8bits_0_q 1 6 1 N 380
+preplace netloc cg_fpga_0_FIXED_IO 1 8 1 NJ 330
+preplace netloc cg_fpga_0_DDR 1 8 1 NJ 350
+levelinfo -pg 1 0 170 400 580 760 970 1230 1470 1740 1930
+pagesize -pg 1 -db -bbox -sgen 0 0 2060 800
+"
+}
+0

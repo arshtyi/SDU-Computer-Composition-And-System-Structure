@@ -43,12 +43,11 @@ end
 always @(posedge clk_100M)
 begin
     if (scan_en)
-        if (scan_sel == 4'd1) 
+        if (scan_sel == 4'd1)
             scan_sel <= 4'd0;
         else
             scan_sel <= scan_sel + 1'b1;
 end
-
 
 wire [6:0]      LED7S;
 wire [3:0]      A;
@@ -146,13 +145,16 @@ endmodule
 module decoder_74139(
     input G,
     input [1:0] A,
-    output [3:0] Y_n
+    output Y0_n,
+    output Y1_n,
+    output Y2_n,
+    output Y3_n
 );
 
-assign Y_n[0] = G ? 1'b1 : ~(A == 2'b00);
-assign Y_n[1] = G ? 1'b1 : ~(A == 2'b01);
-assign Y_n[2] = G ? 1'b1 : ~(A == 2'b10);
-assign Y_n[3] = G ? 1'b1 : ~(A == 2'b11);
+assign Y0_n = G ? 1'b1 : ~(A == 2'b00);
+assign Y1_n = G ? 1'b1 : ~(A == 2'b01);
+assign Y2_n = G ? 1'b1 : ~(A == 2'b10);
+assign Y3_n = G ? 1'b1 : ~(A == 2'b11);
 
 endmodule
 
@@ -181,7 +183,7 @@ module ram_dp1_256x8
     output [7:0]    q
 );
 
-ram1 ram1_i 
+ram1 ram1_i
 (
   .clka(inclock),    // input wire clka
   .wea(wren),      // input wire [0 : 0] wea
