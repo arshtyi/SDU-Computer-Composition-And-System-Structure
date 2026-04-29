@@ -1,97 +1,97 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.658425",
-   "Default View_TopLeft":"-1280,-1314",
+   "Default View_ScaleFactor":"0.665477",
+   "Default View_TopLeft":"11,-183",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
 #  -string -flagsOSRD
-preplace port FIXED_IO_0 -pg 1 -lvl 11 -x 1420 -y -590 -defaultsOSRD
-preplace port DDR_0 -pg 1 -lvl 11 -x 1420 -y -570 -defaultsOSRD
-preplace inst cg_fpga_0 -pg 1 -lvl 1 -x -1130 -y -490 -defaultsOSRD
-preplace inst adpt_out_0 -pg 1 -lvl 1 -x -1130 -y -170 -defaultsOSRD
-preplace inst adpt_in_0 -pg 1 -lvl 2 -x -830 -y -410 -defaultsOSRD
-preplace inst and2_0 -pg 1 -lvl 3 -x -580 -y -700 -defaultsOSRD
-preplace inst and2_1 -pg 1 -lvl 4 -x -350 -y -700 -defaultsOSRD
-preplace inst and2_2 -pg 1 -lvl 5 -x -150 -y -690 -defaultsOSRD
-preplace inst and2_3 -pg 1 -lvl 6 -x 80 -y -690 -defaultsOSRD
-preplace inst and2_4 -pg 1 -lvl 3 -x -580 -y -550 -defaultsOSRD
-preplace inst and2_5 -pg 1 -lvl 4 -x -350 -y -550 -defaultsOSRD
-preplace inst and2_6 -pg 1 -lvl 5 -x -150 -y -550 -defaultsOSRD
-preplace inst and2_7 -pg 1 -lvl 6 -x 80 -y -550 -defaultsOSRD
-preplace inst and2_8 -pg 1 -lvl 3 -x -580 -y -410 -defaultsOSRD
-preplace inst and2_9 -pg 1 -lvl 4 -x -350 -y -410 -defaultsOSRD
-preplace inst and2_10 -pg 1 -lvl 5 -x -150 -y -410 -defaultsOSRD
-preplace inst and2_11 -pg 1 -lvl 6 -x 80 -y -410 -defaultsOSRD
-preplace inst and2_12 -pg 1 -lvl 3 -x -580 -y -230 -defaultsOSRD
-preplace inst and2_13 -pg 1 -lvl 4 -x -350 -y -270 -defaultsOSRD
-preplace inst and2_14 -pg 1 -lvl 5 -x -150 -y -270 -defaultsOSRD
-preplace inst and2_15 -pg 1 -lvl 6 -x 80 -y -290 -defaultsOSRD
-preplace inst FA_0 -pg 1 -lvl 7 -x 300 -y -690 -defaultsOSRD
-preplace inst FA_1 -pg 1 -lvl 8 -x 620 -y -700 -defaultsOSRD
-preplace inst FA_2 -pg 1 -lvl 9 -x 960 -y -700 -defaultsOSRD
-preplace inst FA_3 -pg 1 -lvl 10 -x 1220 -y -700 -defaultsOSRD
-preplace inst FA_4 -pg 1 -lvl 7 -x 300 -y -520 -defaultsOSRD
-preplace inst FA_5 -pg 1 -lvl 8 -x 620 -y -540 -defaultsOSRD
-preplace inst FA_6 -pg 1 -lvl 9 -x 960 -y -540 -defaultsOSRD
-preplace inst FA_7 -pg 1 -lvl 10 -x 1220 -y -540 -defaultsOSRD
-preplace inst FA_8 -pg 1 -lvl 7 -x 300 -y -380 -defaultsOSRD
-preplace inst FA_9 -pg 1 -lvl 8 -x 620 -y -390 -defaultsOSRD
-preplace inst FA_10 -pg 1 -lvl 9 -x 960 -y -390 -defaultsOSRD
-preplace inst FA_11 -pg 1 -lvl 10 -x 1220 -y -390 -defaultsOSRD
-preplace netloc cg_fpga_0_gpio_sw_2 1 1 1 -970 -430n
-preplace netloc adpt_in_0_B0 1 2 2 -660 -630 -440
-preplace netloc adpt_in_0_A0 1 2 4 -700 -620 -420 -620 -240 -620 -70
-preplace netloc and2_0_y 1 0 4 -1330 -770 N -770 N -770 -510J
-preplace netloc adpt_in_0_A1 1 2 4 -680 -480 -420 -480 -220 -480 -50
-preplace netloc and2_1_y 1 4 3 -270 -770 NJ -770 150J
-preplace netloc and2_4_y 1 3 4 -500 -830 NJ -830 NJ -830 170J
-preplace netloc FA_0_Sum 1 0 8 -1340 -870 N -870 N -870 N -870 N -870 N -870 N -870 390J
-preplace netloc FA_0_Cout 1 7 1 N -680
-preplace netloc adpt_in_0_B1 1 2 2 -730 -160 -430J
-preplace netloc and2_5_y 1 4 4 -280 -820 NJ -820 180J -830 440J
-preplace netloc adpt_in_0_A2 1 2 4 -670 -340 -420 -340 -220 -340 10
-preplace netloc and2_8_y 1 3 5 -450 -790 NJ -790 NJ -790 NJ -790 410J
-preplace netloc FA_1_Cout 1 8 1 730 -690n
-preplace netloc adpt_in_0_B2 1 2 3 -670 -310 -460J -190 -230J
-preplace netloc and2_9_y 1 4 5 -260 -780 NJ -780 NJ -780 NJ -780 730J
-preplace netloc adpt_in_0_A3 1 2 4 -690 -330 -440 -200 -220 -200 10
-preplace netloc and2_12_y 1 3 6 -490 -850 NJ -850 NJ -850 NJ -850 NJ -850 760J
-preplace netloc FA_2_Cout 1 9 1 1080 -690n
-preplace netloc and2_13_y 1 4 6 -250 -760 NJ -760 160J -770 420J -790 750J -780 1070J
-preplace netloc and2_2_y 1 5 2 -40J -480 180
-preplace netloc FA_1_Sum 1 6 3 210 -820 NJ -820 710
-preplace netloc FA_4_Cout 1 7 1 440 -520n
-preplace netloc FA_4_Sum 1 0 8 -1310 -860 N -860 N -860 N -860 N -860 N -860 N -860 400J
-preplace netloc and2_6_y 1 5 3 -80J -810 NJ -810 430
-preplace netloc FA_2_Sum 1 7 3 520 -860 NJ -860 1060
-preplace netloc FA_5_Cout 1 8 1 710 -530n
-preplace netloc and2_10_y 1 5 4 -60 -800 NJ -800 NJ -800 740J
-preplace netloc FA_3_Sum 1 8 3 860 -800 NJ -800 1340
-preplace netloc FA_6_Cout 1 9 1 1060 -530n
-preplace netloc FA_3_Cout 1 9 2 1130 -620 1310
-preplace netloc and2_14_y 1 5 5 -30 -620 150J -610 420J -620 NJ -620 1080J
-preplace netloc adpt_in_0_B3 1 2 4 N -320 -470J -170 NJ -170 0J
-preplace netloc and2_3_y 1 6 1 160 -690n
-preplace netloc FA_5_Sum 1 6 3 200 -840 NJ -840 720
-preplace netloc FA_8_Sum 1 0 8 -1300 -20 N -20 N -20 N -20 N -20 N -20 200 -250 410J
-preplace netloc FA_8_Cout 1 7 1 N -370
-preplace netloc and2_7_y 1 6 2 150J -600 420
-preplace netloc FA_6_Sum 1 7 3 530 -830 NJ -830 1050
-preplace netloc FA_9_Cout 1 8 1 720 -380n
-preplace netloc FA_9_Sum 1 0 9 -1290 -300 -970 -200 -650 -300 -480 -180 N -180 N -180 150 -280 450 -290 710J
-preplace netloc and2_11_y 1 6 3 150J -300 NJ -300 730
-preplace netloc FA_7_Sum 1 8 3 870 -790 1080J -780 1320
-preplace netloc FA_10_Cout 1 9 1 1080 -380n
-preplace netloc FA_10_Sum 1 0 10 -1320 -10 N -10 N -10 N -10 N -10 N -10 N -10 N -10 780 -280 1050J
-preplace netloc and2_15_y 1 6 4 N -290 430J -310 NJ -310 1100J
-preplace netloc FA_7_Cout 1 9 2 1120 -790 1330
-preplace netloc FA_11_Sum 1 0 11 -1280 -30 N -30 N -30 N -30 N -30 N -30 180 -260 N -260 770 -290 N -290 1320
-preplace netloc FA_11_Cout 1 0 11 -1270 -40 N -40 N -40 N -40 N -40 N -40 160 -270 N -270 750 -300 N -300 1310
-preplace netloc adpt_out_0_led 1 0 2 -1270 -680 -990J
-preplace netloc cg_fpga_0_FIXED_IO 1 1 10 -970J -880 NJ -880 NJ -880 NJ -880 NJ -880 NJ -880 NJ -880 NJ -880 NJ -880 1350J
-preplace netloc cg_fpga_0_DDR 1 1 10 -980J -890 NJ -890 NJ -890 NJ -890 NJ -890 NJ -890 NJ -890 NJ -890 NJ -890 1360J
-levelinfo -pg 1 -1360 -1130 -830 -580 -350 -150 80 300 620 960 1220 1420
-pagesize -pg 1 -db -bbox -sgen -1460 -1590 1590 710
+preplace port FIXED_IO_0 -pg 1 -lvl 13 -x 2680 -y 480 -defaultsOSRD
+preplace port DDR_0 -pg 1 -lvl 13 -x 2680 -y 500 -defaultsOSRD
+preplace inst cg_fpga_0 -pg 1 -lvl 12 -x 2520 -y 560 -defaultsOSRD
+preplace inst adpt_out_0 -pg 1 -lvl 11 -x 2280 -y 450 -defaultsOSRD
+preplace inst adpt_in_0 -pg 1 -lvl 1 -x 120 -y 540 -defaultsOSRD
+preplace inst and2_0 -pg 1 -lvl 10 -x 2070 -y 750 -defaultsOSRD
+preplace inst and2_1 -pg 1 -lvl 2 -x 340 -y 400 -defaultsOSRD
+preplace inst and2_2 -pg 1 -lvl 4 -x 780 -y 650 -defaultsOSRD
+preplace inst and2_3 -pg 1 -lvl 6 -x 1200 -y 840 -defaultsOSRD
+preplace inst and2_4 -pg 1 -lvl 2 -x 340 -y 520 -defaultsOSRD
+preplace inst and2_5 -pg 1 -lvl 3 -x 540 -y 570 -defaultsOSRD
+preplace inst and2_6 -pg 1 -lvl 5 -x 990 -y 660 -defaultsOSRD
+preplace inst and2_7 -pg 1 -lvl 7 -x 1440 -y 670 -defaultsOSRD
+preplace inst and2_8 -pg 1 -lvl 3 -x 540 -y 270 -defaultsOSRD
+preplace inst and2_9 -pg 1 -lvl 4 -x 780 -y 220 -defaultsOSRD
+preplace inst and2_10 -pg 1 -lvl 6 -x 1200 -y 670 -defaultsOSRD
+preplace inst and2_11 -pg 1 -lvl 8 -x 1670 -y 690 -defaultsOSRD
+preplace inst and2_12 -pg 1 -lvl 4 -x 780 -y 80 -defaultsOSRD
+preplace inst and2_13 -pg 1 -lvl 5 -x 990 -y 140 -defaultsOSRD
+preplace inst and2_14 -pg 1 -lvl 7 -x 1440 -y 380 -defaultsOSRD
+preplace inst and2_15 -pg 1 -lvl 9 -x 1880 -y 430 -defaultsOSRD
+preplace inst FA_0 -pg 1 -lvl 3 -x 540 -y 420 -defaultsOSRD
+preplace inst FA_1 -pg 1 -lvl 4 -x 780 -y 350 -defaultsOSRD
+preplace inst FA_2 -pg 1 -lvl 5 -x 990 -y 270 -defaultsOSRD
+preplace inst FA_3 -pg 1 -lvl 6 -x 1200 -y 140 -defaultsOSRD
+preplace inst FA_4 -pg 1 -lvl 5 -x 990 -y 510 -defaultsOSRD
+preplace inst FA_5 -pg 1 -lvl 6 -x 1200 -y 500 -defaultsOSRD
+preplace inst FA_6 -pg 1 -lvl 7 -x 1440 -y 230 -defaultsOSRD
+preplace inst FA_7 -pg 1 -lvl 8 -x 1670 -y 170 -defaultsOSRD
+preplace inst FA_8 -pg 1 -lvl 7 -x 1440 -y 540 -defaultsOSRD
+preplace inst FA_9 -pg 1 -lvl 8 -x 1670 -y 310 -defaultsOSRD
+preplace inst FA_10 -pg 1 -lvl 9 -x 1880 -y 300 -defaultsOSRD
+preplace inst FA_11 -pg 1 -lvl 10 -x 2070 -y 370 -defaultsOSRD
+preplace netloc FA_0_Cout 1 3 1 630 370n
+preplace netloc FA_0_Sum 1 3 8 640J 430 NJ 430 1080J 420 1330J 450 NJ 450 1770J 500 NJ 500 N
+preplace netloc FA_10_Cout 1 9 1 1970 310n
+preplace netloc FA_10_Sum 1 9 2 NJ 290 2170
+preplace netloc FA_11_Cout 1 10 1 N 380
+preplace netloc FA_11_Sum 1 10 1 2160 360n
+preplace netloc FA_1_Cout 1 4 1 880 290n
+preplace netloc FA_1_Sum 1 4 1 870 340n
+preplace netloc FA_2_Cout 1 5 1 1080 160n
+preplace netloc FA_2_Sum 1 5 1 1090 260n
+preplace netloc FA_3_Cout 1 6 2 NJ 150 N
+preplace netloc FA_3_Sum 1 6 1 1290 130n
+preplace netloc FA_4_Cout 1 5 1 N 520
+preplace netloc FA_4_Sum 1 5 6 1080J 580 1330J 460 NJ 460 1760J 510 NJ 510 2180
+preplace netloc FA_5_Cout 1 6 1 1290 250n
+preplace netloc FA_5_Sum 1 6 1 1310 490n
+preplace netloc FA_6_Cout 1 7 1 1540 190n
+preplace netloc FA_6_Sum 1 7 1 1550 220n
+preplace netloc FA_7_Cout 1 8 2 NJ 180 1980
+preplace netloc FA_7_Sum 1 8 1 1780 160n
+preplace netloc FA_8_Cout 1 7 1 1560 330n
+preplace netloc FA_8_Sum 1 7 4 NJ 530 NJ 530 NJ 530 2160
+preplace netloc FA_9_Cout 1 8 1 N 320
+preplace netloc FA_9_Sum 1 8 3 1760J 220 NJ 220 2180
+preplace netloc adpt_in_0_A0 1 1 9 260 650 NJ 650 690 760 NJ 760 1080 770 NJ 770 NJ 770 NJ 770 1980
+preplace netloc adpt_in_0_A1 1 1 6 250 590 450 640 680J 580 900 590 NJ 590 1290
+preplace netloc adpt_in_0_A2 1 1 7 230 330 410 200 650 730 NJ 730 1110 740 NJ 740 1580J
+preplace netloc adpt_in_0_A3 1 1 8 220 190 NJ 190 630 10 890 350 NJ 350 1320 310 1540J 390 1760
+preplace netloc adpt_in_0_B1 1 1 4 240 610 440 340 640 150 NJ
+preplace netloc adpt_in_0_B2 1 1 6 220 660 NJ 660 660 720 900 740 1100 600 1320
+preplace netloc adpt_in_0_B3 1 1 8 230 770 NJ 770 NJ 770 NJ 770 1110 760 1350 750 1570 540 1790
+preplace netloc adpt_out_0_led 1 11 1 N 450
+preplace netloc and2_0_y 1 10 1 2180 520n
+preplace netloc and2_10_y 1 6 1 1300 230n
+preplace netloc and2_11_y 1 8 1 1780 300n
+preplace netloc and2_12_y 1 4 1 900 80n
+preplace netloc and2_13_y 1 5 1 N 140
+preplace netloc and2_14_y 1 7 1 1530 170n
+preplace netloc and2_15_y 1 9 1 1980 370n
+preplace netloc and2_1_y 1 2 1 N 400
+preplace netloc and2_2_y 1 4 1 870 510n
+preplace netloc and2_3_y 1 6 1 1340 540n
+preplace netloc and2_4_y 1 2 1 430 420n
+preplace netloc and2_5_y 1 3 1 660 350n
+preplace netloc and2_6_y 1 5 1 1090 500n
+preplace netloc and2_7_y 1 7 1 1550 310n
+preplace netloc and2_8_y 1 3 1 660 270n
+preplace netloc and2_9_y 1 4 1 870 220n
+preplace netloc cg_fpga_0_gpio_sw_2 1 0 13 20 910 NJ 910 NJ 910 NJ 910 NJ 910 NJ 910 NJ 910 NJ 910 NJ 910 NJ 910 NJ 910 NJ 910 2660
+preplace netloc adpt_in_0_B0 1 1 9 270 600 420 500 670 750 NJ 750 NJ 750 1290J 760 NJ 760 NJ 760 NJ
+preplace netloc cg_fpga_0_DDR 1 12 1 NJ 500
+preplace netloc cg_fpga_0_FIXED_IO 1 12 1 NJ 480
+levelinfo -pg 1 0 120 340 540 780 990 1200 1440 1670 1880 2070 2280 2520 2680
+pagesize -pg 1 -db -bbox -sgen 0 0 2810 920
 "
 }
 0
