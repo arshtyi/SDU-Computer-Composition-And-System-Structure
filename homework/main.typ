@@ -12,8 +12,7 @@
     list-spacing: .65em,
 )
 #set par(justify: true)
-#show link: it => text(fill: blue.darken(20%), underline(it))
-#show raw: set text(font: ("IBM Plex Mono", "Noto Serif CJK SC", "Noto Sans CJK SC"))
+#show raw: set text(font: ("JetBrains Mono", "Noto Serif CJK SC", "Noto Sans CJK SC"))
 #show raw.where(block: false): box.with(
     fill: luma(240),
     inset: (x: .3em, y: 0em),
@@ -34,10 +33,10 @@
 #set document(title: Title, author: author, date: date)
 #title(Title)
 #exam-info(info: (
-    班级: "24智能",
+    班级: "24数据·24智能",
     教师: "马博洋",
-    源码: link("https://github.com/Arshtyi/SDU-Computer-Composition-And-System-Structure", "source"),
-    课本: [#link("https://www.cmpedu.com/books/book/5603415.htm", "Book1"),#link("https://www.hep.com.cn/book/show/ae8b4f15-c953-4445-a56d-ed96390fe0ae", "Book2")],
+    源码: link("https://github.com/Arshtyi/SDU-Computer-Composition-And-System-Structure", "link"),
+    课本: [#link("https://www.cmpedu.com/books/book/5603415.htm", "link1"), #link("https://www.hep.com.cn/book/show/ae8b4f15-c953-4445-a56d-ed96390fe0ae", "link2")],
 ))
 #let question = question.with(supplement: "Q", ref-on: true, show-ref-prefix: false)
 #let (K, KB, MB, GB, bit, byte, mus, ms, ns, s, min, mm, cm, word, block, track) = (
@@ -123,7 +122,7 @@
 
 #question[
     （_2-4.15_） 设CPU共有$16$条地址线和$8$条数据线，并用#overline[MREQ]（低电平有效）作访存控制信号，R#sym.slash#overline[W]作读#sym.slash 写命令信号（高电平为读，低电平为写）。现有这些存储芯片：ROM（$#K[2]times#bit[8]$，$#K[4]times#bit[4]$，$#K[8]times#bit[8]$），RAM（$#K[16]times#bit[4]$，$#K[2]times#bit[8]$，$#K[4]times#bit[8]$）及`74138`译码器和其他自定门电路。试从上述选用合适的芯片，画出CPU和存储芯片的连接图。要求：
-    - 最小4#K[4]地址为系统程序区，$4096 tilde.op 16383$地址范围为用户程序区。
+    - 最小#K[4]地址为系统程序区，$4096 tilde.op 16383$地址范围为用户程序区。
     - 指出选用的芯片型号和数量。
     - 详细画出片选逻辑。
 ]
